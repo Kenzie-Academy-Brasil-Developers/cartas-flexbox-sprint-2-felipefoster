@@ -1,111 +1,116 @@
 html {
-    font-family: "Raleway", "Helvetica", sans-serif;
-    font-weight: 400;
-    color: #2F3442;
-    height: 100%;
-    background-color: #FFFFFF;
-    
-}
 
-.icon {
-  color: #BCD2DA;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-    /* display, flex-direction */
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #CAD0D2;
-    border-radius: 4px;
-    overflow: hidden;
-    
-}
-
-.card__description {
-    /* display, flex-direction, justify-content, align-items */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-}
-
-.card__descriptionIcon {
-  font-size: 32px;
-  margin-bottom: 10px;}
-
-.card__descriptionText {
-    color: #57727C;
-    font-size: 12px;
-    text-align: center;
-    max-width: calc(100% - 30px);
-}
-
-  .card__price {
-    text-align: center;
-    color: #57727C;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 5px 15px;
-    border-top: 1px solid #D7DBDD;
-    background-color: #EEF3F5;
-  }
-
-  .cardGroup {
-    /* display */
-    display: flex;
-    border: 1px solid #CAD0D2;
-    border-radius: 4px;
-    overflow: hidden;
-    max-width: 320px;
+    html {
+      font-family: "Raleway", "Helvetica", sans-serif;
+      font-weight: 400;
+      color: #2F3442;
+      height: 100%;
+      background-color: #FFFFFF;
+      
   }
   
+  .icon {
+    color: #BCD2DA;
+  }
+  
+  
+  .card {
+      /* display, flex-direction */
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #CAD0D2;
+      border-radius: 4px;
+      overflow: hidden;
+      
+  }
+  
+  .card__description {
+      /* display, flex-direction, justify-content, align-items */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
+  }
+  
+  .card__descriptionIcon {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .card__descriptionText {
+      color: #57727C;
+      font-size: 12px;
+      text-align: center;
+      max-width: calc(100% - 30px);
+  }
+  
+    .card__price {
+      text-align: center;
+      color: #57727C;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 15px;
+      border-top: 1px solid #D7DBDD;
+      background-color: #EEF3F5;
+    }
+  
+    .cardGroup {
+      /* display */
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      border: 1px solid #CAD0D2;
+      border-radius: 4px;
+      overflow: hidden;
+      max-width: 768px;
+    }
+    
+      .cardGroup__card {
+        /* flex-grow, flex-shrink, flex-basis */
+        justify-content: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0; 
+        border: none;
+        border-radius: 0;
+        border-left: 1px solid #D7DBDD;
+      }
+    
+      
+    
+      .cardGroup__cardDescription {
+        flex-grow:1;
+        flex-shrink:1;
+        flex-basis:0;
+
+      }
+
+      .muda {
+       border-left: 1px solid #D7DBDD;
+       border-right: 1px solid #D7DBDD;
+      }
+
+       @media (max-width: 480px) {
+        .cardGroup {
+        max-width: 320px;  
+        
+        }
+      }
+  
+      @media (max-width: 1024px) {
+        .cardGroup{
+          max-width: 710px;
+        }
+  
+    
     .cardGroup__card {
       /* flex-grow, flex-shrink, flex-basis */
-      /* flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: auto; */
+      
+     
       border: none;
       border-radius: 0;
-      max-width: 106px;
-      border-left: 1px solid #D7DBDD;
-    }
-  
-    
-  
-    .cardGroup__cardDescription {
-      /* flex-grow, flex-shrink, flex-basis */
-      flex-grow: 1;
-      flex-basis: 1;
-      flex-shrink: 2;
-    }
-    /* @media (max-width: 480px) {
-      .cardGroup {
-      max-width: 320px;  
       
-      }
-    } */
-
-    @media (max-width: 1024px) {
-      .cardGroup{
-        max-width: 710px;
-      }
-
-  
-  .cardGroup__card {
-    /* flex-grow, flex-shrink, flex-basis */
-    
-   
-    border: none;
-    border-radius: 0;
-    
-  }
-
     }
-    
-   
+  
+      }
